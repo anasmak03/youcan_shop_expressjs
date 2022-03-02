@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="careers.css">
+    <title>carrers</title>
+</head>
+<body>
+    <%- include('./partials/Navbar.ejs'); %>
+    <div class="careers">
+        <div dir="rtl" lang="ar">
+            <h1>إذا كنت تعتقد بأنك إنسان مبدع وقادر على خلق أفكار ثورية، والمساهمة في بناء منصة احترافية، تواصل معنا، وانضم إلى فريق متميز<br> وذي خبرة عالية، وساهم معنا في بناء فكرة ستغير حياة الملايين من الشباب.</h1>
+        </div>
+        <div class="parent">
+            <div class="box">
+                <img src="https://youcan.shop/images/career/join-us.png" alt="careers">
+            </div>
+            <div class="box1">
+                <div dir="rtl" lang="ar">
+                    <form action="">
+                        <label>البريد الإلكتروني</label> <br>
+                        <input type="email" placeholder="البريد الإلكترونية"></input> <br>
+                        <label>رقم الهاتف</label><br>
+                        <input type="number" placeholder="رقم الهاتف"></input><br>
+                        <label>الدولة</label> <br>
+                        <input type="text" placeholder="الدولة"></input>
+                        <label>المدينة</label>
+                        <input type="text" placeholder="المدينة"></input>
+
+                        <label>التخصص</label><br>
+                        <input type="text" placeholder="التخصص"></input><br>
+                        <label for="">السيرة الذاتية</label> 
+                        <input type="file"><br>
+                        <label for="">إضافة نماذج من الأعمال السابقة</label><br>
+                        <textarea></textarea>
+
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <%- include('./partials/Footer.ejs'); %>
+
+</body>
+</html>
