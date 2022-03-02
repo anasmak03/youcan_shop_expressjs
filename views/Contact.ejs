@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Contact</title>
+</head>
+<body>
+    <%- include('./partials/Navbar.ejs'); %>
+        <div class="contact">
+            <div dir="rtl" lang="ar">
+               <form action="Contact" method="post">
+                <label>البريد الإلكتروني</label> <br>
+                <input type="email" placeholder="البريد الإلكترونية" name="email"></input> <br>
+                <label>رابط المتجر</label><br>
+                <input type="text" placeholder="رابط المتجر" name="lien"></input><br>
+                <label>ماهي المشكلة؟</label><br>
+                <textarea placeholder="ماهي المشكلة؟" name="message"></textarea><br>
+                <label>سبب التواصل</label> <br>
+                    <div class="sp">
+                        <input type="radio" name="Type_Cheked" value="مشكلة تقنية"> <label class="label">مشكلة الدفع</label>
+                <input type="radio" name="Type_Cheked" value="مشكلة الدفع"> <label class="label">مشكلة تقنية  </label>
+                <input type="radio" name="Type_Cheked" value="مشاكل أخرى"> <label for="" class="label">مشاكل أخرى   </label>
+                    </div>
+                    <button type="submit">ارسال</button>
+               </form>
+            </div>
+        </div>
+    <%- include('./partials/Footer.ejs'); %>
+</body>
+</html>

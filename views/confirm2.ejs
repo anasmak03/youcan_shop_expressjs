@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="body.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/Navbar.ejs'); %>
+        <div class="confirm">
+           <div dir="rtl" lang="ar">
+            <h1>لقد تم تسجيل طلبكم بنجاح </h1>
+            <h2>شكرا على تفهمكم سيقوم فريقنا بالرد على رسالتكم قريبا</h2>
+            <button class="msg"><a href="/">الرجوع الى الصفحة الرئيسية</a></button>
+           </div>
+        </div>
+       
+    <%- include('./partials/Footer.ejs'); %>
+</body>
+</html>
